@@ -2073,13 +2073,14 @@ footer.site-footer {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-    gap: clamp(24px, 4vw, 48px);
-    width: min(1100px, 100%);
+    gap: clamp(20px, 3vw, 36px);
+    width: min(980px, 100%);
     margin: 0 auto;
-    padding: clamp(20px, 2.2vw, 26px);
-    border: 6px solid #fff;
+    padding: clamp(18px, 2vw, 24px);
+    border: 5px solid rgba(255, 255, 255, 0.82);
     border-radius: 20px;
-    background: #f5f6f7;
+    background: rgba(245, 246, 247, 0.78);
+    backdrop-filter: blur(3px);
 }
 
 .contact_container .contact-intro {
@@ -2090,7 +2091,7 @@ footer.site-footer {
 
 .contact_container .contact-eyebrow {
     display: inline-block;
-    padding: 7px 15px;
+    padding: 6px 13px;
     border: 1px solid #172027;
     border-radius: 999px;
     font-size: 11px;
@@ -2100,9 +2101,9 @@ footer.site-footer {
 }
 
 .contact_container .contact-intro h1 {
-    margin: 18px 0 10px;
+    margin: 14px 0 8px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: clamp(26px, 2.8vw, 34px);
+    font-size: clamp(24px, 2.5vw, 30px);
     font-weight: 500;
     line-height: 1.2;
     color: #172027;
@@ -2111,33 +2112,33 @@ footer.site-footer {
 .contact_container .contact-intro > p {
     margin: 0;
     color: #626c73;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 13px;
+    line-height: 1.55;
 }
 
 .contact_container .contact-details {
     display: grid;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
-    margin: 14px 0 10px;
+    margin: 12px 0 8px;
 }
 
 .contact_container .contact-detail {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     min-width: 0;
-    padding: 11px 13px;
-    border-radius: 14px;
-    background: #fff;
+    padding: 8px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.76);
     box-shadow: 0 4px 16px rgba(23, 32, 39, 0.04);
 }
 
 .contact_container .contact-icon {
     display: grid;
-    flex: 0 0 36px;
-    width: 36px;
-    height: 36px;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
     place-items: center;
     border-radius: 50%;
     background: rgb(79, 255, 88);
@@ -2159,15 +2160,15 @@ footer.site-footer {
 
 .contact_container .contact-detail-label {
     color: #7a858c;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .contact_container .contact-detail a,
 .contact_container .contact-detail p {
     margin: 0;
     color: #172027;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 13px;
+    line-height: 1.4;
     overflow-wrap: anywhere;
     text-decoration: none;
 }
@@ -2193,22 +2194,22 @@ footer.site-footer {
 .contact_container .contact-form {
     display: grid;
     align-content: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .contact_container .contact-form label {
     display: grid;
-    gap: 6px;
+    gap: 5px;
     margin: 0;
     color: #172027;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 .contact_container .contact-name-fields {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    gap: 10px;
 }
 
 .contact_container .contact-form input,
@@ -2216,23 +2217,23 @@ footer.site-footer {
     box-sizing: border-box;
     width: 100%;
     border: 1px solid #e5e8eb;
-    border-radius: 14px;
+    border-radius: 12px;
     outline: none;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.86);
     color: #172027;
     font: 400 14px 'Trebuchet MS', sans-serif;
     transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .contact_container .contact-form input {
-    min-height: 42px;
-    padding: 0 14px;
+    min-height: 38px;
+    padding: 0 12px;
 }
 
 .contact_container .contact-form textarea {
-    height: 96px;
-    min-height: 96px;
-    padding: 12px 14px;
+    height: 80px;
+    min-height: 80px;
+    padding: 10px 12px;
     resize: vertical;
 }
 
@@ -2248,8 +2249,8 @@ footer.site-footer {
 }
 
 .contact_container .contact-form button {
-    min-height: 42px;
-    padding: 10px 20px;
+    min-height: 38px;
+    padding: 9px 18px;
     border: 0;
     border-radius: 999px;
     background: rgb(79, 255, 88);
@@ -2280,18 +2281,18 @@ footer.site-footer {
 
     .contact_container .contact-panel {
         grid-template-columns: 1fr;
-        gap: 22px;
-        padding: 22px 18px;
+        gap: 18px;
+        padding: 18px 14px;
         border-width: 4px;
     }
 
     .contact_container .contact-details {
-        margin: 14px 0 10px;
+        margin: 12px 0 8px;
     }
 
     .contact_container .contact-form textarea {
-        height: 90px;
-        min-height: 90px;
+        height: 76px;
+        min-height: 76px;
     }
 }
 
