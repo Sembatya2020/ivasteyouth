@@ -2059,7 +2059,7 @@ footer.site-footer {
     min-height: 100vh;
     height: auto;
     margin: 0;
-    padding: 132px 24px 60px;
+    padding: 112px 24px 48px;
     background-color: #222;
     background-image: linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url("images/1%20(19).jpg");
     background-position: center;
@@ -2072,12 +2072,12 @@ footer.site-footer {
 .contact_container .contact-panel {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: clamp(32px, 6vw, 76px);
-    width: min(1120px, 100%);
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: clamp(24px, 4vw, 48px);
+    width: min(1100px, 100%);
     margin: 0 auto;
-    padding: clamp(28px, 5vw, 56px);
-    border: 8px solid #fff;
+    padding: clamp(20px, 2.2vw, 26px);
+    border: 6px solid #fff;
     border-radius: 20px;
     background: #f5f6f7;
 }
@@ -2100,9 +2100,9 @@ footer.site-footer {
 }
 
 .contact_container .contact-intro h1 {
-    margin: 24px 0 12px;
+    margin: 18px 0 10px;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: clamp(28px, 3.2vw, 40px);
+    font-size: clamp(26px, 2.8vw, 34px);
     font-weight: 500;
     line-height: 1.2;
     color: #172027;
@@ -2117,27 +2117,27 @@ footer.site-footer {
 
 .contact_container .contact-details {
     display: grid;
-    gap: 12px;
+    gap: 10px;
     width: 100%;
-    margin: 32px 0 22px;
+    margin: 14px 0 10px;
 }
 
 .contact_container .contact-detail {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     min-width: 0;
-    padding: 14px;
-    border-radius: 16px;
+    padding: 11px 13px;
+    border-radius: 14px;
     background: #fff;
     box-shadow: 0 4px 16px rgba(23, 32, 39, 0.04);
 }
 
 .contact_container .contact-icon {
     display: grid;
-    flex: 0 0 42px;
-    width: 42px;
-    height: 42px;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
     place-items: center;
     border-radius: 50%;
     background: rgb(79, 255, 88);
@@ -2149,6 +2149,12 @@ footer.site-footer {
     display: grid;
     gap: 4px;
     min-width: 0;
+}
+
+.contact_container .contact-phones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
 }
 
 .contact_container .contact-detail-label {
@@ -2173,11 +2179,12 @@ footer.site-footer {
 
 .contact_container .contact-social {
     margin-top: auto !important;
+    font-size: 13px !important;
 }
 
 .contact_container .contact-social .text-link {
     display: inline-block;
-    margin-top: 6px;
+    margin-top: 4px;
     color: #257b2b;
     font-weight: 700;
     text-decoration: none;
@@ -2186,12 +2193,12 @@ footer.site-footer {
 .contact_container .contact-form {
     display: grid;
     align-content: center;
-    gap: 18px;
+    gap: 12px;
 }
 
 .contact_container .contact-form label {
     display: grid;
-    gap: 8px;
+    gap: 6px;
     margin: 0;
     color: #172027;
     font-size: 13px;
@@ -2218,13 +2225,14 @@ footer.site-footer {
 }
 
 .contact_container .contact-form input {
-    min-height: 48px;
-    padding: 0 16px;
+    min-height: 42px;
+    padding: 0 14px;
 }
 
 .contact_container .contact-form textarea {
-    min-height: 180px;
-    padding: 14px 16px;
+    height: 96px;
+    min-height: 96px;
+    padding: 12px 14px;
     resize: vertical;
 }
 
@@ -2240,8 +2248,8 @@ footer.site-footer {
 }
 
 .contact_container .contact-form button {
-    min-height: 48px;
-    padding: 12px 20px;
+    min-height: 42px;
+    padding: 10px 20px;
     border: 0;
     border-radius: 999px;
     background: rgb(79, 255, 88);
@@ -2266,19 +2274,24 @@ footer.site-footer {
 @media screen and (max-width: 760px) {
     .contact_container {
         min-height: auto;
-        padding: 224px 18px 44px;
+        padding: 224px 18px 36px;
         background-attachment: scroll;
     }
 
     .contact_container .contact-panel {
         grid-template-columns: 1fr;
-        gap: 32px;
-        padding: 28px 22px;
-        border-width: 5px;
+        gap: 22px;
+        padding: 22px 18px;
+        border-width: 4px;
     }
 
     .contact_container .contact-details {
-        margin: 24px 0 18px;
+        margin: 14px 0 10px;
+    }
+
+    .contact_container .contact-form textarea {
+        height: 90px;
+        min-height: 90px;
     }
 }
 
